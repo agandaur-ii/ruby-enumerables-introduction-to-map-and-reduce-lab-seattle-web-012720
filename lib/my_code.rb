@@ -33,10 +33,7 @@ end
 
 # reduce-like
 
-def reduce_to_total(source_array, starting_point)
-  if starting_point == nil
-    starting_point = 0
-  end
+def reduce_to_total(source_array, starting_point=0)
   index = 0 
   while index < source_array.length do
     starting_point += source_array[index]
